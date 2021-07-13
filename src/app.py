@@ -345,4 +345,4 @@ db_info = {
 cb = CouchbaseClient.create_client(*db_info.values())
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
