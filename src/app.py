@@ -342,7 +342,7 @@ db_info = {
     "password": os.getenv("PASSWORD"),
 }
 
-cb = CouchbaseClient.create_client(*db_info.values())
-
 if __name__ == "__main__":
     app.run(debug=False, use_reloader=False)
+    cb = CouchbaseClient.create_client(*db_info.values())
+
